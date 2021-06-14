@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/header :: common-header"/>
+<body roleId="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<head th:replace="common/header :: navbar"/>
+
+<div class= "container">
+<div class="jumbotron text-center">
+<h1>Admin Logged in</h1>
+<p>we can see all the account activities through this portal</p>
+</div>
+
+<div class="row">
+<a th:href="@{/userDetails}">
+<div class="col-sm-6">
+  <h2>User</h2>
+  <p>click here to see the user's infornation.</p>
+</div>
+</a>
+<a th:href="@{/appointment}">
+<div class="col-sm-6">
+<h2>Appointment</h2>
+<p>click here to check the appointment status.</p>
+</div>
+</a>
+
+</div>
+</div>
+</body>
+<div th:replace="common/header :: body-bottom-scripts"/>
+
+</html> 
